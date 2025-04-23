@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人介绍</title>
+    <title>李飞个人介绍</title>
     <style>
         * {
             margin: 0;
@@ -128,36 +128,13 @@
         <p class="bio">
             你好！我是[李飞]，一名热衷于Web开发和前沿技术的开发者。
             我正在将您重定向到我的博客，您可以在那里找到更多关于我的信息和我分享的技术文章。
+            我的微信是   237283840
         </p>
-        <div class="countdown">3秒后将自动跳转到我的博客...</div>
+       
         <div class="social-links">
-            <a href="#" class="social-link">G</a>
-            <a href="#" class="social-link">T</a>
-            <a href="#" class="social-link">L</a>
-            <a href="#" class="social-link">M</a>
+         
         </div>
     </div>
 
-    <script>
-        // 倒计时和跳转
-        let seconds = 3;
-        const countdownElement = document.querySelector('.countdown');
-        
-        const timer = setInterval(() => {
-            seconds--;
-            countdownElement.textContent = `${seconds}秒后将自动跳转到我的博客...`;
-            
-            if (seconds <= 0) {
-                clearInterval(timer);
-                window.location.href = "https://blog.websem.cc";
-            }
-        }, 1000);
-        
-        // 允许用户点击任意位置提前跳转
-        document.body.addEventListener('click', () => {
-            clearInterval(timer);
-            window.location.href = "https://blog.websem.cc";
-        });
-    </script>
 </body>
 </html>
